@@ -38,6 +38,8 @@ function TrackCusOrderStatus() {
     return () => clearInterval(interval);
   }, [order?._id]);
 
+  
+
   const getStepStatus = (step) => {
     const currentIndex = steps.indexOf(trackingStatus);
     const stepIndex = steps.indexOf(step);
@@ -67,6 +69,8 @@ function TrackCusOrderStatus() {
       <div className="flex justify-between items-start px-4 mb-12 gap-4 sm:gap-6 md:gap-10">
   {steps.map((step, idx) => {
     const status = getStepStatus(step);
+
+
     const circleStyle = {
       base: "w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold",
       current: "bg-yellow-500",
@@ -126,7 +130,7 @@ function TrackCusOrderStatus() {
 
 
   );
-  
+
 }
 
 export default TrackCusOrderStatus;
