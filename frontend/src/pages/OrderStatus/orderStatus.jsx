@@ -108,7 +108,7 @@ function OrderStatus() {
         </div>
       </div>
 
-      
+
 
       {loading ? (
         <p className="text-center text-gray-500 text-xl">Loading your orders...</p>
@@ -126,6 +126,8 @@ function OrderStatus() {
                       alt={item.name}
                       className="w-24 h-24 rounded-lg"
                     />
+
+
                     <div>
                       <h3 className="font-bold text-lg">{item.name}</h3>
                       <p className="text-gray-600 text-lg">Quantity: {item.quantity}</p>
@@ -134,6 +136,8 @@ function OrderStatus() {
                       </p>
                     </div>
                   </div>
+
+                  
                 ))}
                 <div className="mt-4 p-4 border-t border-gray-300 bg-gray-100 rounded-lg">
                   <p className="font-semibold text-lg text-blue-700">Subtotal: Rs.{order.subtotal}.00</p>

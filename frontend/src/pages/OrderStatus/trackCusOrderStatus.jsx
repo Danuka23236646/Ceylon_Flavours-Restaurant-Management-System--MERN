@@ -97,11 +97,15 @@ function TrackCusOrderStatus() {
           🧾 Order Summary
         </h2>
 
+
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="flex flex-col items-center">
             <span className="text-sm text-gray-500 mb-1">Order ID</span>
             <span className="text-sm font-medium text-gray-700 break-all">{order._id}</span>
           </div>
+
+
 
           <div className="flex flex-col items-center">
             <span className="text-sm text-gray-500 mb-1">Current Status</span>
@@ -110,6 +114,8 @@ function TrackCusOrderStatus() {
             </span>
           </div>
 
+
+
           <div className="flex flex-col items-center">
             <span className="text-sm text-gray-500 mb-1">Total Payment</span>
             <span className="text-lg font-bold text-green-600">Rs. {order.total}.00</span>
@@ -117,6 +123,8 @@ function TrackCusOrderStatus() {
         </div>
       </div>
     </div>
+
+    
   );
 }
 
