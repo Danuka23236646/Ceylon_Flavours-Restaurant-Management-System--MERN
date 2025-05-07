@@ -136,8 +136,7 @@ function OrderStatus() {
                       </p>
                     </div>
                   </div>
-
-
+                  
                 ))}
                 <div className="mt-4 p-4 border-t border-gray-300 bg-gray-100 rounded-lg">
                   <p className="font-semibold text-lg text-blue-700">Subtotal: Rs.{order.subtotal}.00</p>
@@ -170,8 +169,7 @@ function OrderStatus() {
                   {order.status === "Pending" && (
                     <button
                       onClick={() => handleEditOrder(order)}
-                     className="bg-sky-400 text-white px-6 py-3 rounded-lg hover:bg-sky-500 transition font-semibold"
-
+                      className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition font-semibold"
                     >
                       Edit Order
                     </button>
